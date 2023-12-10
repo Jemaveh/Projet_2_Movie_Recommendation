@@ -411,7 +411,7 @@ def onglet2():
 # ONGLET 3 = SYSTEME DE RECOMMANDATION 
 def onglet3():
     # st.markdown("<h1 style='text-align: center;'>Projet2</h1>", unsafe_allow_html=True)
-    st.markdown("<h3 style='text-align: center;'>Système de recommandation</h3>", unsafe_allow_html=True)
+    st.markdown("<h3 style='text-align: center;'>Système de Recommandation</h3>", unsafe_allow_html=True)
     df['averageRating'] = df['averageRating'].astype("float")
     
     #enlever les "unknowns ""
@@ -462,7 +462,7 @@ def onglet3():
 
                 # Colonne de droite (col2) pour les informations
                 with col2:
-                    st.write('<p class="col2-content">Recommendation : ', df.loc[index, 'liste_titres_FR'], '</p>', unsafe_allow_html=True)
+                    st.write('<p class="col2-content">Recommandation : ', df.loc[index, 'liste_titres_FR'], '</p>', unsafe_allow_html=True)
                     st.write('<p class="col2-content">Note du film : {}</p>'.format(df.loc[index, 'averageRating']), unsafe_allow_html=True)
                     st.write('<p class="col2-content">Director : ', df.loc[index, 'director_name'], '</p>', unsafe_allow_html=True)
                     st.write('<p class="col2-content">Stars : ', df.loc[index, 'stars'], '</p>', unsafe_allow_html=True)
