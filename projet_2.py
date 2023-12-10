@@ -411,7 +411,7 @@ def onglet2():
 # ONGLET 3 = SYSTEME DE RECOMMANDATION 
 def onglet3():
     # st.markdown("<h1 style='text-align: center;'>Projet2</h1>", unsafe_allow_html=True)
-    st.markdown("<h3 style='text-align: center;'>Systeme de recommendation</h3>", unsafe_allow_html=True)
+    st.markdown("<h3 style='text-align: center;'>Système de recommandation</h3>", unsafe_allow_html=True)
     df['averageRating'] = df['averageRating'].astype("float")
     
     #enlever les "unknowns ""
