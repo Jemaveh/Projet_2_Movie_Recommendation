@@ -519,7 +519,7 @@ def main():
     with st.sidebar:
         
         st.image("logo.png", use_column_width=True) 
-        onglet_selectionne = option_menu("MENU", ["Présentation", "Données IMDb", "Données Recommandation", "Systeme de Recommendation", "Top 10 des films par années"], 
+        onglet_selectionne = option_menu("MENU", ["Présentation", "Données IMDb", "Données Recommandation", "Système de Recommandation", "Top 10 des films par années"], 
             icons=['house', 'gear', 'gear'], menu_icon="cast", default_index=0)
    
 
@@ -535,7 +535,7 @@ def main():
         with st.spinner("Chargement... Vers les données du système de recommandation"):
             time.sleep(2)
         onglet2()
-    elif onglet_selectionne == "Systeme de Recommendation":
+    elif onglet_selectionne == "Système de Recommandation":
         with st.spinner("Chargement... Vers votre sélection de films"):
             time.sleep(2)
         onglet3()    
